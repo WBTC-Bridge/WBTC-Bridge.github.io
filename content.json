@@ -1,0 +1,129 @@
+{
+  "key_facts": {
+    "Category": "Wrapped Bitcoin bridge asset",
+    "Network": "Ethereum and EVM ecosystems",
+    "Token": "WBTC",
+    "Custody": "Bitcoin-backed wrapped token",
+    "Peg": "Designed to represent BTC 1:1"
+  },
+  "intent": [
+    {
+      "q": "WBTC Bridge from Bitcoin to Ethereum",
+      "a": "WBTC is an ERC-20 representation of Bitcoin used in Ethereum DeFi. Moving from BTC to WBTC is not the same as a simple chain bridge between two EVM networks; it involves a wrapped Bitcoin system where BTC backs minted WBTC. Retail users often acquire WBTC through exchanges or swaps rather than minting directly. Once on Ethereum, WBTC can be used in lending, liquidity pools, collateral systems, and DEX trades. The Ethereum WBTC token contract is 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599, and users should verify it before bridging or depositing."
+    },
+    {
+      "q": "WBTC Bridge to Arbitrum, Base, Polygon, or Optimism",
+      "a": "WBTC can move across EVM networks through bridge routes, but the destination token may be canonical WBTC, bridged WBTC, or another wrapped BTC representation depending on the chain and route. This matters because lending markets and exchanges may support one version but not another. Before bridging WBTC, check the source chain, destination chain, token contract, liquidity, and whether the receiving platform accepts that exact WBTC. A bridge aggregator can quote routes, but high-value transfers should also be compared with official bridge or exchange withdrawal paths."
+    },
+    {
+      "q": "WBTC Bridge fees, slippage, and minimum received",
+      "a": "WBTC bridge cost can include source gas, destination gas, bridge fees, solver fees, and DEX slippage if the route swaps between BTC-like assets. Because WBTC is high-value per token, even a small percentage slippage can be expensive on large transfers. The most useful quote field is minimum received on the destination chain, not only the displayed bridge fee. Review whether the route sends WBTC directly or swaps through WETH, USDC, tBTC, cbBTC, or another BTC wrapper."
+    },
+    {
+      "q": "WBTC vs BTCB, tBTC, and cbBTC bridge options",
+      "a": "WBTC is the long-running Ethereum DeFi wrapped Bitcoin token, while BTCB, tBTC, cbBTC, and other BTC wrappers have different issuers, custody models, chains, and liquidity. Searchers comparing WBTC bridge options usually care about where the asset will be used after bridging. If the target lending market, vault, or DEX pool requires WBTC, another BTC wrapper may not be accepted. If the goal is simply BTC exposure on a specific chain, compare liquidity, redemption assumptions, issuer or protocol risk, and integration support."
+    },
+    {
+      "q": "WBTC Bridge safety and proof of reserves",
+      "a": "WBTC bridge safety has two parts: the wrapped Bitcoin backing model and the cross-chain route used to move the token. WBTC itself represents BTC-backed ERC-20 exposure, while a bridge route may add smart-contract, validator, message-passing, or liquidity risk. Verify the token contract, check the official WBTC site and block explorer, review the route's bridge protocol, and send a test amount for new chains. Do not rely on the WBTC symbol alone because fake or unsupported BTC wrappers can appear in wallets and DEX pools."
+    }
+  ],
+  "compare": {
+    "title": "WBTC vs other wrapped Bitcoin assets",
+    "rows": [
+      [
+        "Dimension",
+        "WBTC",
+        "Alternative BTC wrapper"
+      ],
+      [
+        "Primary use",
+        "Ethereum DeFi collateral and liquidity",
+        "Chain-specific BTC exposure"
+      ],
+      [
+        "Token standard",
+        "ERC-20 on Ethereum and bridged versions",
+        "Varies by issuer and chain"
+      ],
+      [
+        "Acceptance",
+        "Broadly integrated in major DeFi markets",
+        "Depends on protocol support"
+      ],
+      [
+        "Main check",
+        "Official contract and backing model",
+        "Issuer, liquidity, redemption, bridge route"
+      ]
+    ]
+  },
+  "faq": [
+    {
+      "q": "Is WBTC the same as Bitcoin?",
+      "a": "No. WBTC is a tokenized representation of BTC used on Ethereum and other smart-contract networks. It is designed to track Bitcoin one-to-one, but it is not native BTC on the Bitcoin network. Users hold an ERC-20 token and accept the custody, token contract, and bridge assumptions behind that representation."
+    },
+    {
+      "q": "Can I bridge native BTC directly into WBTC?",
+      "a": "Some services support BTC-to-WBTC flows, but many retail users obtain WBTC by withdrawing from an exchange or swapping on a supported chain. Direct minting and redemption can involve specific merchants or custodial processes. For ordinary users, the practical path is usually to buy or swap WBTC, then bridge that WBTC only through routes that support the exact destination token."
+    },
+    {
+      "q": "What is the WBTC contract address on Ethereum?",
+      "a": "The WBTC token contract on Ethereum is 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599. Always verify the address on Etherscan or another trusted source before depositing or trading. Other chains may have different WBTC addresses, and some BTC-like tokens are not WBTC even if they use a similar icon or name."
+    },
+    {
+      "q": "Why did I receive a different Bitcoin token after bridging?",
+      "a": "Some bridge routes use available liquidity rather than preserving the exact asset. A route may output bridged WBTC, BTCB, tBTC, cbBTC, or another BTC representation if that is how the bridge or destination chain is configured. Before signing, inspect the receive token contract and make sure the destination protocol supports it."
+    },
+    {
+      "q": "Is WBTC bridge slippage important?",
+      "a": "Yes, especially for large transfers. If the route includes a swap between WBTC and another BTC-like asset, slippage and price impact can reduce the destination amount. Even small percentages matter because WBTC represents high-value BTC exposure. Compare direct routes, minimum received, liquidity depth, and any intermediate swap legs before approving the bridge transaction."
+    },
+    {
+      "q": "Should I bridge WBTC or swap to BTC first?",
+      "a": "It depends on the destination. If you need BTC on the Bitcoin network, bridging WBTC may not be the right action; you may need an exchange or redemption path. If you need Bitcoin exposure inside Ethereum DeFi or an EVM chain, WBTC may be appropriate. The destination protocol's supported asset list should decide the route, not only the token name."
+    }
+  ],
+  "niche": {
+    "type": "bridge",
+    "asset": "WBTC",
+    "receive": "WBTC",
+    "supported_networks": [
+      "Ethereum",
+      "Arbitrum",
+      "Base",
+      "Optimism",
+      "Polygon",
+      "Avalanche",
+      "BNB Chain"
+    ]
+  },
+  "authority": [
+    {
+      "text": "WBTC official site",
+      "url": "https://www.wbtc.network/"
+    },
+    {
+      "text": "WBTC contract on Etherscan",
+      "url": "https://etherscan.io/token/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
+    },
+    {
+      "text": "WBTC market listing on CoinGecko",
+      "url": "https://www.coingecko.com/en/coins/wrapped-bitcoin"
+    },
+    {
+      "text": "WBTC smart contracts on GitHub",
+      "url": "https://github.com/WrappedBTC/bitcoin-token-smart-contracts"
+    },
+    {
+      "text": "Ethereum bridge introduction",
+      "url": "https://ethereum.org/en/bridges/"
+    }
+  ],
+  "sameAs": [
+    "https://www.wbtc.network/",
+    "https://x.com/WrappedBTC",
+    "https://github.com/WrappedBTC/bitcoin-token-smart-contracts",
+    "https://www.coingecko.com/en/coins/wrapped-bitcoin"
+  ]
+}
