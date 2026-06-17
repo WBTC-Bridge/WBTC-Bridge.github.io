@@ -1,0 +1,107 @@
+{
+ "keyword": "wbtc bridge",
+ "h1": "WBTC Bridge",
+ "brand": "WBTC",
+ "niche": "bridge",
+ "verb": "Bridge",
+ "title": "WBTC Bridge - Open App",
+ "meta_description": "wbtc bridge to the official Wrapped Bitcoin destination; verify WBTC on Ethereum, review bridge risks, and open app from the correct domain.",
+ "palette": {
+  "mode": "dark",
+  "bg": "#0B0B0F",
+  "accent": "#F09242",
+  "ink": "#FFFFFF"
+ },
+ "hero_h2": "Move Bitcoin liquidity into Ethereum DeFi",
+ "hero_lead": "wbtc bridge routes users toward the official Wrapped Bitcoin destination to verify WBTC on Ethereum, understand BTC mint and redeem paths, and open the app with the correct domain.",
+ "badge": "Bitcoin DeFi",
+ "widget": {
+  "from": "BTC",
+  "from_net": "Bitcoin",
+  "to": "WBTC",
+  "to_net": "Ethereum",
+  "action": "Open WBTC App"
+ },
+ "trust": [
+  "ERC-20 on Ethereum",
+  "BTC-backed model",
+  "Verified contract"
+ ],
+ "what_is": "WBTC Network is the official Wrapped Bitcoin destination for an ERC-20 tokenized BTC asset on Ethereum; verify the canonical contract on <a href=\"https://etherscan.io/token/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599\">Etherscan</a> before connecting a wallet.",
+ "how": [
+  {
+   "t": "Verify the destination",
+   "d": "Open the official WBTC domain and compare the token contract before using any wallet prompt or third-party route."
+  },
+  {
+   "t": "Choose the route",
+   "d": "For BTC to WBTC or redemption, follow the current supported merchant, exchange, or app path shown from the official destination."
+  },
+  {
+   "t": "Review assumptions",
+   "d": "Confirm network, recipient address, custody model, confirmations, and any provider fees before submitting a transaction."
+  },
+  {
+   "t": "Track settlement",
+   "d": "Use Bitcoin and Ethereum explorers to confirm the BTC leg, WBTC mint, burn, or ERC-20 transfer status."
+  }
+ ],
+ "points": [
+  {
+   "h": "BTC representation on Ethereum",
+   "p": "WBTC is an ERC-20 representation of Bitcoin used across Ethereum wallets, exchanges, and DeFi apps; the canonical contract is visible on <a href=\"https://etherscan.io/token/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599\">Etherscan</a>."
+  },
+  {
+   "h": "Mint and burn framework",
+   "p": "The WBTC model uses custodians and merchants for minting and burning, as described in the <a href=\"https://wbtc.network/assets/wrapped-tokens-whitepaper.pdf\">Wrapped Tokens whitepaper</a>."
+  },
+  {
+   "h": "Bridge risk matters",
+   "p": "Cross-chain movement can introduce smart-contract, operator, custody, and user-error risks; Ethereum.org explains the main <a href=\"https://ethereum.org/bridges/\">bridge trade-offs</a>."
+  }
+ ],
+ "eeat": [
+  {
+   "text": "WBTC whitepaper",
+   "url": "https://wbtc.network/assets/wrapped-tokens-whitepaper.pdf"
+  },
+  {
+   "text": "Etherscan WBTC token",
+   "url": "https://etherscan.io/token/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
+  },
+  {
+   "text": "Ethereum bridge guide",
+   "url": "https://ethereum.org/bridges/"
+  }
+ ],
+ "faq": [
+  {
+   "q": "What is a wbtc bridge used for?",
+   "a": "A wbtc bridge route is used to move between native BTC exposure and WBTC on Ethereum, or to move WBTC through supported cross-chain paths when available.",
+   "open": true
+  },
+  {
+   "q": "Is wbtc bridge the same as wrapping Bitcoin?",
+   "a": "Not exactly. Wrapping BTC into WBTC uses a custodian and merchant model, while general bridging can also mean moving an already wrapped token across blockchain networks.",
+   "open": false
+  },
+  {
+   "q": "What should I verify before using a wbtc bridge?",
+   "a": "Verify the official domain, token contract, connected network, recipient address, provider terms, and bridge risks before approving any transaction.",
+   "open": false
+  },
+  {
+   "q": "Does the wbtc bridge have guaranteed fees or speed?",
+   "a": "No. Fees and timing depend on Bitcoin confirmations, Ethereum gas, the selected provider, and any merchant or exchange process; avoid pages claiming fixed returns or guaranteed settlement.",
+   "open": false
+  },
+  {
+   "q": "Where is the official wbtc bridge app?",
+   "a": "Use the official WBTC destination at <a href=\"https://wbtc.network/\">wbtc.network</a> and follow the current app or merchant route shown there; do not trust lookalike domains.",
+   "open": false
+  }
+ ],
+ "official_url": "https://wbtc.network/",
+ "official_domain": "wbtc.network",
+ "footer_note": "Not the official app; verify the domain before connecting a wallet. Educational content only, not financial advice."
+}
