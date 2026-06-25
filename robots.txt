@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://wbtc-bridge.github.io/sitemap.xml
