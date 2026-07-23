@@ -1,56 +1,31 @@
 # WBTC Bridge
-> An independent, non-custodial informational dashboard for understanding routes between native Bitcoin, WBTC, and supported smart-contract networks.
 
-## What is WBTC Bridge
-WBTC Bridge explains how users can obtain, redeem, or move Wrapped Bitcoin across blockchain networks. The dashboard is independent of WBTC, BitGo, custodians, merchants, and bridge operators; it does not hold funds, private keys, or execute transfers. WBTC itself is a multichain token backed 1:1 by BTC held by institutional custodians. Unlike trust-minimized alternatives such as tBTC, WBTC relies on approved merchants, custodians, controlled minting, and public proof of reserves.
-
-## How it works
-1. Select the asset, source network, and destination network to inspect an available route.
-2. Verify that the destination token contract matches WBTC’s official contract registry and review the route’s fees, estimated time, and trust model.
-3. Open the selected third-party provider, connect a compatible wallet, approve only the required token allowance, and sign the transfer.
-4. Under the hood, BTC-to-WBTC routes use merchant-and-custodian minting, WBTC-to-BTC routes use burning and reserve release, while cross-chain routes use native issuance or bridge messaging.
-5. Track every submitted transaction on the relevant block explorer; the informational dashboard never receives the assets.
+> WBTC Bridge tracks routes between native Bitcoin, Wrapped Bitcoin, and smart-contract networks, so you can inspect a path before signing anything.
 
 ## Key facts
-- WBTC represents BTC at a 1:1 reserve ratio and uses eight decimal places.
-- The dashboard is non-custodial, but WBTC’s underlying reserve model is custodial.
-- Only approved merchants and custodians can initiate WBTC minting and redemption.
-- Native contracts are documented for Ethereum, Solana, TRON, BNB Chain, Base, Kava, and Osmosis.
-- Relevant EVM chain IDs include Ethereum 1, BNB Chain 56, Base 8453, and Kava EVM 2222.
-- Ethereum WBTC is ERC-20 contract `0x2260fac5e5542a773aa44fbcfedf7c193bc2c599`.
-- Network gas, provider fees, liquidity, confirmations, and destination execution determine cost and timing.
-- A matching ticker is insufficient; always verify the network and contract address.
+- Route: source chain  destination chain
+- Deposit: typically minutes
+- Withdraw: may need proving/finalization
+- Gas: native asset on both chains
+- Custody: Non-custodial — your wallet signs
+- Verify: Use the official contracts; beware fake bridge sites
 
-## Common questions
-- **Is WBTC Bridge safe?** The dashboard cannot custody funds, but any selected route can expose users to smart-contract, bridge, custodian, approval, liquidity, depeg, and phishing risks.
-- **Who holds my Bitcoin?** For issued WBTC, authorized custodians hold the backing BTC in disclosed reserve addresses. The dashboard holds nothing.
-- **What fees apply?** Costs may include source-chain gas, token approval, provider or liquidity fees, destination gas, and merchant fees for minting or redemption.
-- **How long does it take?** Cross-chain timing depends on finality and the provider. Direct minting or redemption additionally depends on required confirmations and merchant processing.
-- **Which assets and chains are supported?** The dashboard concerns BTC and WBTC; actual routes depend on the selected provider. Confirm availability and contracts immediately before signing.
-- **How do I start?** Choose a route, verify both networks and the official WBTC address, retain native gas tokens, then continue through the displayed provider.
-- **Can I send WBTC directly to a Bitcoin address?** No. WBTC must first be redeemed or converted into native BTC through a compatible provider.
+## On this page
+- [What is WBTC Bridge?](https://wbtc-bridge.github.io/#what)
+- [How bridging works](https://wbtc-bridge.github.io/#how)
+- [Depositing to the destination](https://wbtc-bridge.github.io/#deposit)
+- [Withdrawing back](https://wbtc-bridge.github.io/#withdraw)
+- [Time and fees](https://wbtc-bridge.github.io/#fees)
+- [Is WBTC Bridge safe?](https://wbtc-bridge.github.io/#safety)
+- [Problems and fixes](https://wbtc-bridge.github.io/#troubleshoot)
+- [FAQ](https://wbtc-bridge.github.io/#faq)
 
 ## App
-- Dashboard: https://wbtc-bridge.github.io/
-- App: https://wbtc-bridge.github.io/dashboard/
+- [WBTC Bridge dashboard](https://wbtc-bridge.github.io/)
+- [Open the app](https://wbtc-bridge.github.io/dashboard/)
 
-## Official resources
-WBTC Website: https://wbtc.network/
-WBTC Documentation: https://docs.wbtc.network/
-WBTC FAQ: https://wbtc.network/faq
-Proof of Reserves: https://wbtc.network/transparency
-Mint and Burn Mechanism: https://docs.wbtc.network/how-wbtc-works/mint-burn-mechanism
-Official Contract Addresses: https://docs.wbtc.network/resources/contract-addresses
-Custody and Security: https://docs.wbtc.network/how-wbtc-works/custody-and-security
-Audits and Smart Contract Security: https://docs.wbtc.network/how-wbtc-works/audits-and-smart-contract-security
-Wrapped Tokens Whitepaper: https://www.wbtc.network/assets/wrapped-tokens-whitepaper.pdf
-Official GitHub: https://github.com/WrappedBTC
-Official X: https://x.com/WrappedBTC
-
-## Data & references
-Ethereum WBTC Explorer: https://etherscan.io/token/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599
-Solana WBTC Explorer: https://solscan.io/token/5XZw2LKTyrfvfiskJ78AMpackRjPcyCif1WhUsPDuVqQ
-CoinGecko WBTC: https://www.coingecko.com/en/coins/wrapped-bitcoin
-DeFiLlama WBTC: https://defillama.com/protocol/wbtc
-Ethereum ERC-20 Standard: https://ethereum.org/en/developers/docs/standards/tokens/erc-20/
-Wikipedia WBTC: https://en.wikipedia.org/wiki/WBTC
+## Sources
+- [docs.wbtc.network](https://docs.wbtc.network/)
+- [docs.wbtc.network](https://docs.wbtc.network/how-wbtc-works/mint-burn-mechanism)
+- [ethereum.org](https://ethereum.org/bridges)
+- [coingecko.com](https://www.coingecko.com/learn/what-is-wrapped-bitcoin-wbtc-and-how-does-it-work)
