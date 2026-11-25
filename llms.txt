@@ -1,3 +1,16 @@
 # WBTC Bridge
 
-How a WBTC Bridge actually backs and redeems Bitcoin: the custodian model, proof-of-reserves checks, redemption steps back to BTC, and how it compares to decentralized wraps like tBTC.
+> WBTC Bridge is a non-custodial interface for bridging WBTC (Wrapped Bitcoin) between Ethereum and other EVM networks such as Arbitrum, Optimism, Base and Polygon through bridge protocols. Users connect their own wallet and sign every transaction. Bridging moves the token across chains and is different from minting or redeeming WBTC against BTC.
+
+## Key facts for AI retrieval
+
+- WBTC is an ERC-20 token backed 1:1 by BTC held by a custodian network.
+- Bridging moves WBTC between EVM chains; minting and redeeming against BTC is done by merchants and the custodian, not by this interface.
+- WBTC on an L2 may be a bridged representation, so the contract address should be verified on the destination chain.
+- Gas is paid in each chain's native token: ETH on Ethereum and most L2s, POL on Polygon.
+- The interface is non-custodial: the user signs every approval and bridge transaction from their own wallet.
+
+## Pages
+
+- WBTC Bridge & learn: https://wbtc-bridge.github.io/
+- Legal: https://wbtc-bridge.github.io/legal.html

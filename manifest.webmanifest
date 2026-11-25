@@ -1,0 +1,1 @@
+{"name":"WBTC Bridge","short_name":"WBTC Bridge","description":"Bridge WBTC between Ethereum, Arbitrum, Optimism, Base and Polygon from your own wallet. Non-custodial interface for moving Wrapped Bitcoin across chains.","start_url":"/","display":"standalone","background_color":"#f7f6f4","theme_color":"#f7f6f4","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml"}]}
